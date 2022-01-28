@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cars App</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <a href="/cars/create">Add new car</a>
+    <table>
+      <tr>
+        <th>Vehicle</th>
+        <th>Model</th>
+        <th>Year</th>
+      </tr>
+      <% cars.forEach(car => { %>
+        <tr>
+          <td><%= car.vehicle %></td>
+          <td><%= car.model %></td>
+          <td><%= car.year %></td>
+        </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>
